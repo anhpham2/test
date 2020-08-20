@@ -16,6 +16,7 @@ public class TestController {
     @RequestMapping(value = "/returnUrl")
     public ResponseEntity<String> returnUrl(@RequestParam Map<String, String> parameterMap) {
         System.out.println("#############returnUrl");
+        System.out.println("#############returnUrl");
         System.out.println(parameterMap.toString());
         return new ResponseEntity<>(parameterMap.toString(), HttpStatus.OK);
     }
